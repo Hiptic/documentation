@@ -1,6 +1,32 @@
 body { 
 	font-family:'Avenir Next','Open Sans', sans-serif, system; 
 }
+#hub-content a {
+	color:#81A8B8;
+	font-weight:600;
+}
+
 #hub-landing-top .btn { display:none; }
 #content-head h1 { font-weight:400; }
 .content-body .magic-block-textarea h2, .content-body .magic-block-api-header h2 { font-weight:400; }
+
+/* TAGS */
+.tag-all { 
+	border-radius:3px;
+	padding:3px;
+	font-size:13px;
+	color:#FFF;
+	width:120px;
+	display:inline-block;
+	text-align:center;
+}
+.tag-developers {
+	background-color:#8A9599;
+}
+.tag-marketers {
+	background-color:#957ABF;
+}
+
+/* Github Gists Fixes */
+.content-body .magic-block-html table td { border:0; }
+
