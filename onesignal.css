@@ -1,1 +1,6 @@
+body { 
+	font-family:'Avenir Next','Open Sans', sans-serif, system; 
+}
 #hub-landing-top .btn { display:none; }
+#content-head h1 { font-weight:400; }
+.content-body .magic-block-textarea h2, .content-body .magic-block-api-header h2 { font-weight:400; }
