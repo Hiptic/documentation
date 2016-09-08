@@ -1,16 +1,194 @@
+/************** TYPOGRAPHY **************/
+
 body { 
 	font-family:'Avenir Next','Open Sans', sans-serif, system; 
 }
-#hub-content a {
-	color:#81A8B8;
+code {
+	font-family:Menlo, Monaco, Consolas, "Lucida Console", monospace;
+}
+b, strong { 
 	font-weight:600;
 }
 
-#hub-landing-top .btn { display:none; }
-#content-head h1 { font-weight:400; }
-.content-body .magic-block-textarea h2, .content-body .magic-block-api-header h2 { font-weight:400; }
+section#hub-content header h1, 
+section#hub-content header h2 {
+	font-weight:700;
+	font-size:30px;
+}
+.content-body .magic-block-textarea h1, 
+.content-body .magic-block-api-header h1,
+.content-body .magic-block-textarea h2, 
+.content-body .magic-block-api-header h2 {
+	font-weight:500;
+	font-size:26px;
+	color:#555;
+}
 
-/* TAGS */
+.content-body .magic-block-textarea h3 {
+	font-weight:600;
+	font-style:normal;
+	font-family:Menlo, Monaco, Consolas, "Lucida Console", monospace;
+	margin:50px 20px 30px 0;
+	font-size:22px;
+	padding-top:30px;
+	border-top:1px solid #EEE;
+}
+.magic-block-textarea > p > a {
+	font-weight:600;
+}
+
+#hub-reference .hub-reference .hub-reference-section p, 
+#hub-reference .hub-reference .hub-reference-section ul, 
+#hub-reference .hub-reference .hub-reference-section table { 
+	font-size:16px;
+}
+
+/*** colors ***/
+.content-body .magic-block-textarea h3 {
+	color:hsla(197,10%,60%,1);
+}
+.magic-block-textarea > p > a {
+	color:hsla(197,40%,68%,1);
+}
+/* color:hsla(197,30%,72%,1); */
+
+.content-body .magic-block-textarea h4, 
+.content-body .magic-block-api-header h4, 
+.content-body .magic-block-textarea h5, 
+.content-body .magic-block-api-header h5, 
+.content-body .magic-block-textarea h6, 
+.content-body .magic-block-api-header h6 {
+
+}
+
+nav#hub-sidebar ul a { color:#AAA; }
+
+
+/************** LAYOUT ***************/
+/*** REST API ***/
+#hub-reference .hub-reference .hub-reference-section .hub-reference-right {
+	background:none;
+	border:0;
+	width:300px;
+}
+.content-body .magic-block-callout {
+	margin:0 20px 3em 31px;
+}
+/************** CODE TABS **************/
+
+
+
+/*** DARK CODE BLOCK VARIANT ***/
+.content-body .magic-block-code ul.block-code-header {
+	background-color:hsla(197,10%,60%,1);
+  color:#FFF;
+}
+
+.content-body .magic-block-code ul.block-code-header li a {
+	font-size:14px;
+   padding: 8px 15px 5px;
+	color:hsla(0,0%,100%,0.5);
+	font-weight:600;
+}
+
+.content-body .magic-block-code ul.block-code-header li a:hover {
+	background-color:hsla(197,0%,100%,0.1);
+	color:hsla(197,65%,90%,1);
+}
+.content-body .magic-block-code ul.block-code-header li a.active {
+  background-color:hsla(197,0%,100%,0.15);
+  color:#FFF;
+  border-bottom:3px solid hsla(197,20%,45%,1);
+}
+.content-body .magic-block-code ul.block-code-header li a.active:hover { 
+	color:#FFF; 
+}
+
+/*** LIGHT CODE BLOCK VARIANT
+.content-body .magic-block-code ul.block-code-header { background-color:#F9FAFA; }
+.content-body .magic-block-code ul.block-code-header li a:hover { background-color:#E1EDF2; }
+.content-body .magic-block-code ul.block-code-header li a.active { color:#333; }
+.content-body .magic-block-code ul.block-code-header li a.active:hover { color:#81A8B8; }
+***/
+
+/*** colors ***/
+.content-body .magic-block-code { background:none; }
+.content-body .magic-block-code div.block-code-code pre,
+.content-body .magic-block-textarea pre, 
+.content-body .magic-block-api-header pre { 
+	background-color:hsla(197,15%,98%,1); 
+}
+.content-body .magic-block-code div.block-code-code pre code {
+	font-size:13.5px;
+	line-height:20px;
+	color:#444;
+}
+
+/*** margins ***/
+.content-body .magic-block-code ul.block-code-header {
+	margin:0 20px 0 31px;
+	padding-left:0;
+}
+.content-body .magic-block-code div.block-code-code {
+	padding:0 20px 20px 31px;
+}
+.content-body .magic-block-code ul.block-code-header li { 
+	margin-bottom:0;
+}
+.content-body .magic-block-code div.block-code-code pre,
+.content-body .magic-block-textarea pre, 
+.content-body .magic-block-api-header pre { 
+	padding:20px 30px;
+}
+
+/*** tables ***/
+.content-body .magic-block-parameters {
+	margin:0 20px 40px 31px;
+}
+
+.content-body .magic-block-parameters .block-parameters-table {
+	border-radius: 2px;
+  border:0;
+  background-color:hsla(197,15%,98%,1);
+}
+.content-body .magic-block-parameters .block-parameters-table .th {
+  background-color:hsla(197,15%,98%,1);
+  border:0;
+  color:hsla(197,10%,60%,0.9);
+  font-weight:600;
+}
+.content-body .magic-block-parameters .block-parameters-table .tr:first-child .th {
+	padding:10px 15px 15px;
+}
+
+.content-body .magic-block-parameters .block-parameters-table .tr:last-child .td {
+	padding:5px 15px 10px;
+}
+/**** DARKER TABLE VARIANT 
+.content-body .magic-block-parameters .block-parameters-table .th {
+  background-color: #798F98;
+  border:0;
+  color: #fff;
+}
+.content-body .magic-block-parameters .block-parameters-table {
+  border-radius: 3px;
+  border:0;
+  box-shadow: 0 1px 3px #BBB;
+}
+******/
+
+.content-body .magic-block-parameters .block-parameters-table .td:first-child { 
+	width:220px;
+}
+.content-body .magic-block-parameters .block-parameters-table .td:nth-child(2) { 
+	width:120px;
+}
+/*** Github Gists Fixes (TEMP / TODO / REVIEW) ***/
+.content-body .magic-block-html table td { border:0; }
+
+
+
+/************** TAGS **************/
 .tag-all { 
 	border-radius:3px;
 	padding:3px;
@@ -21,12 +199,13 @@ body {
 	text-align:center;
 }
 .tag-developers {
-	background-color:#8A9599;
+	background-color:hsla(197,10%,60%,1);
 }
 .tag-marketers {
 	background-color:#957ABF;
 }
 
-/* Github Gists Fixes */
-.content-body .magic-block-html table td { border:0; }
 
+
+
+#hub-landing-top .btn { display:none; }
