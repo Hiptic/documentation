@@ -23,7 +23,6 @@ section#hub-content header h2 {
 	font-size:26px;
 	color:#555;
 }
-
 .content-body .magic-block-textarea h3 {
 	font-weight:600;
 	font-style:normal;
@@ -36,14 +35,42 @@ section#hub-content header h2 {
 .magic-block-textarea > p > a {
 	font-weight:600;
 }
-
 #hub-reference .hub-reference .hub-reference-section p, 
 #hub-reference .hub-reference .hub-reference-section ul, 
 #hub-reference .hub-reference .hub-reference-section table { 
 	font-size:16px;
 }
 
+.content-body .magic-block-textarea ul li, 
+.content-body .magic-block-api-header ul li {
+  margin-bottom: 0.3em;
+  font-size: 16px;
+}
+.content-body .magic-block-textarea ol li, 
+.content-body .magic-block-api-header ol li {
+  margin-bottom: 0;
+  font-size: 15px;
+}
+.content-body .magic-block-textarea ul, 
+.content-body .magic-block-api-header ul, 
+.content-body .magic-block-textarea ol, 
+.content-body .magic-block-api-header ol {
+  margin-bottom:1.4em;
+}
+
+.content-body .magic-block-textarea ol, 
+.content-body .magic-block-api-header ol {
+  color:hsla(197,10%,60%,0.9);
+  font-weight:600;
+}
+.content-body .magic-block-textarea ol p {
+  padding-left:10px;
+  font-weight:400;
+}
+
+
 /*** colors ***/
+p { color:hsla(197,10%,45%,1); }
 .content-body .magic-block-textarea h3 {
 	color:hsla(197,10%,60%,1);
 }
@@ -86,7 +113,7 @@ nav#hub-sidebar ul a { color:#AAA; }
 
 .content-body .magic-block-code ul.block-code-header li a {
 	font-size:14px;
-   padding: 8px 15px 5px;
+  padding: 8px 15px 5px;
 	color:hsla(0,0%,100%,0.5);
 	font-weight:600;
 }
@@ -94,6 +121,7 @@ nav#hub-sidebar ul a { color:#AAA; }
 .content-body .magic-block-code ul.block-code-header li a:hover {
 	background-color:hsla(197,0%,100%,0.1);
 	color:hsla(197,65%,90%,1);
+  border-bottom:3px solid hsla(197,50%,80%,1);
 }
 .content-body .magic-block-code ul.block-code-header li a.active {
   background-color:hsla(197,0%,100%,0.15);
@@ -180,9 +208,6 @@ nav#hub-sidebar ul a { color:#AAA; }
 .content-body .magic-block-parameters .block-parameters-table .td:first-child { 
 	width:220px;
 }
-.content-body .magic-block-parameters .block-parameters-table .td:nth-child(2) { 
-	width:120px;
-}
 /*** Github Gists Fixes (TEMP / TODO / REVIEW) ***/
 .content-body .magic-block-html table td { border:0; }
 
@@ -190,22 +215,63 @@ nav#hub-sidebar ul a { color:#AAA; }
 
 /************** TAGS **************/
 .tag-all { 
-	border-radius:3px;
-	padding:3px;
+	border-radius:5px;
+	padding:5px 13px 4px;
 	font-size:13px;
 	color:#FFF;
 	width:120px;
 	display:inline-block;
 	text-align:center;
+  font-weight:600;
+  border-bottom-width:2px;
+  border-bottom-style:solid;
 }
 .tag-developers {
 	background-color:hsla(197,10%,60%,1);
+  border-color:hsla(197,15%,40%,1);
 }
 .tag-marketers {
-	background-color:#957ABF;
+	background-color:hsla(263,36%,62%,1);
+  border-color:hsla(263,15%,40%,1);
 }
 
 
+/************** NAV **************/
+#hub-subheader-parent #hub-subheader {
+  border:0;
+  background-color: hsla(197,10%,60%,1);
+}
+.theme-line header#hub-header #header-top {
+  border:0;
+}
+#hub-search input {
+  background-color:hsla(197,10%,60%,1);
+  border:0;
+}
+#hub-search input:placeholder, #hub-search input::placeholder, #hub-search input::-webkit-input-placeholder, #hub-search input:-moz-placeholder, #hub-search input::-moz-placeholder,#hub-search input:-ms-input-placeholder {
+  color:#FFF;
+}
+#hub-search .fa.fa-search {
+  color:hsla(197,5%,100%,0.85);
+}
+#hub-subheader-parent #hub-subheader .hub-subheader-breadcrumbs .hub-breadcrumb-item {
+  color:hsla(197,5%,100%,0.5);
+}
+#hub-subheader-parent #hub-subheader #header-bottom-nav #header-icon-nav .icons .subheaderLink .icon {
+  color:hsla(197,5%,100%,0.85);
+}
+#hub-subheader-parent #hub-subheader #header-bottom-nav #header-icon-nav .icons .subheaderLink span {
+  color:#FFF;
+}
+
+/* Fix subpage button widths on right */
+nav#hub-sidebar ul .subpages li a {
+  width:224px;
+}
+
+#hub-subheader #header-bottom-nav #header-icon-nav .icons .subheaderLink.active {
+    border-bottom: 3px solid hsla(197,10%,60%,1);
+}
 
 
 #hub-landing-top .btn { display:none; }
