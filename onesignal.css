@@ -174,10 +174,13 @@ nav#hub-sidebar ul a { color:#AAA; }
 }
 
 /*** tables ***/
+
 .content-body .magic-block-parameters {
 	margin:0 20px 40px 31px;
 }
-
+.content-body .magic-block-parameters a {
+  font-weight:600;
+}
 .content-body .magic-block-parameters .block-parameters-table {
 	border-radius: 2px;
   border:0;
@@ -268,7 +271,6 @@ a.dash-link {
   background-repeat: no-repeat;
   background-position: 3px 3px;
   background-size:16px;
-  display:inline-block;
   margin-bottom:2px;
   cursor:pointer;
 }
