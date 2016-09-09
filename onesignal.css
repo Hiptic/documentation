@@ -1,23 +1,23 @@
 /************** TYPOGRAPHY **************/
 
-body { 
-	font-family:'Avenir Next','Open Sans', sans-serif, system; 
+body {
+	font-family:'Avenir Next','Open Sans', sans-serif, system;
 }
 code {
 	font-family:Menlo, Monaco, Consolas, "Lucida Console", monospace;
 }
-b, strong { 
+b, strong {
 	font-weight:600;
 }
 
-section#hub-content header h1, 
+section#hub-content header h1,
 section#hub-content header h2 {
 	font-weight:700;
 	font-size:30px;
 }
-.content-body .magic-block-textarea h1, 
+.content-body .magic-block-textarea h1,
 .content-body .magic-block-api-header h1,
-.content-body .magic-block-textarea h2, 
+.content-body .magic-block-textarea h2,
 .content-body .magic-block-api-header h2 {
 	font-weight:500;
 	font-size:26px;
@@ -35,30 +35,30 @@ section#hub-content header h2 {
 .magic-block-textarea > p > a {
 	font-weight:600;
 }
-#hub-reference .hub-reference .hub-reference-section p, 
-#hub-reference .hub-reference .hub-reference-section ul, 
-#hub-reference .hub-reference .hub-reference-section table { 
+#hub-reference .hub-reference .hub-reference-section p,
+#hub-reference .hub-reference .hub-reference-section ul,
+#hub-reference .hub-reference .hub-reference-section table {
 	font-size:16px;
 }
 
-.content-body .magic-block-textarea ul li, 
+.content-body .magic-block-textarea ul li,
 .content-body .magic-block-api-header ul li {
   margin-bottom: 0.3em;
   font-size: 16px;
 }
-.content-body .magic-block-textarea ol li, 
+.content-body .magic-block-textarea ol li,
 .content-body .magic-block-api-header ol li {
   margin-bottom: 0;
   font-size: 15px;
 }
-.content-body .magic-block-textarea ul, 
-.content-body .magic-block-api-header ul, 
-.content-body .magic-block-textarea ol, 
+.content-body .magic-block-textarea ul,
+.content-body .magic-block-api-header ul,
+.content-body .magic-block-textarea ol,
 .content-body .magic-block-api-header ol {
   margin-bottom:1.4em;
 }
 
-.content-body .magic-block-textarea ol, 
+.content-body .magic-block-textarea ol,
 .content-body .magic-block-api-header ol {
   color:hsla(197,10%,60%,0.9);
   font-weight:600;
@@ -79,11 +79,11 @@ p { color:hsla(197,10%,45%,1); }
 }
 /* color:hsla(197,30%,72%,1); */
 
-.content-body .magic-block-textarea h4, 
-.content-body .magic-block-api-header h4, 
-.content-body .magic-block-textarea h5, 
-.content-body .magic-block-api-header h5, 
-.content-body .magic-block-textarea h6, 
+.content-body .magic-block-textarea h4,
+.content-body .magic-block-api-header h4,
+.content-body .magic-block-textarea h5,
+.content-body .magic-block-api-header h5,
+.content-body .magic-block-textarea h6,
 .content-body .magic-block-api-header h6 {
 
 }
@@ -101,9 +101,11 @@ nav#hub-sidebar ul a { color:#AAA; }
 .content-body .magic-block-callout {
 	margin:0 20px 3em 31px;
 }
+
+
+
+
 /************** CODE TABS **************/
-
-
 
 /*** DARK CODE BLOCK VARIANT ***/
 .content-body .magic-block-code ul.block-code-header {
@@ -128,23 +130,16 @@ nav#hub-sidebar ul a { color:#AAA; }
   color:#FFF;
   border-bottom:3px solid hsla(197,20%,45%,1);
 }
-.content-body .magic-block-code ul.block-code-header li a.active:hover { 
-	color:#FFF; 
+.content-body .magic-block-code ul.block-code-header li a.active:hover {
+	color:#FFF;
 }
-
-/*** LIGHT CODE BLOCK VARIANT
-.content-body .magic-block-code ul.block-code-header { background-color:#F9FAFA; }
-.content-body .magic-block-code ul.block-code-header li a:hover { background-color:#E1EDF2; }
-.content-body .magic-block-code ul.block-code-header li a.active { color:#333; }
-.content-body .magic-block-code ul.block-code-header li a.active:hover { color:#81A8B8; }
-***/
 
 /*** colors ***/
 .content-body .magic-block-code { background:none; }
 .content-body .magic-block-code div.block-code-code pre,
-.content-body .magic-block-textarea pre, 
-.content-body .magic-block-api-header pre { 
-	background-color:hsla(197,15%,98%,1); 
+.content-body .magic-block-textarea pre,
+.content-body .magic-block-api-header pre {
+	background-color:hsla(197,15%,98%,1);
 }
 .content-body .magic-block-code div.block-code-code pre code {
 	font-size:13.5px;
@@ -160,12 +155,12 @@ nav#hub-sidebar ul a { color:#AAA; }
 .content-body .magic-block-code div.block-code-code {
 	padding:0 20px 20px 31px;
 }
-.content-body .magic-block-code ul.block-code-header li { 
+.content-body .magic-block-code ul.block-code-header li {
 	margin-bottom:0;
 }
 .content-body .magic-block-code div.block-code-code pre,
-.content-body .magic-block-textarea pre, 
-.content-body .magic-block-api-header pre { 
+.content-body .magic-block-textarea pre,
+.content-body .magic-block-api-header pre {
 	padding:20px 30px;
 }
 
@@ -192,7 +187,13 @@ nav#hub-sidebar ul a { color:#AAA; }
 .content-body .magic-block-parameters .block-parameters-table .tr:last-child .td {
 	padding:5px 15px 10px;
 }
-/**** DARKER TABLE VARIANT 
+
+.content-body .magic-block-parameters .block-parameters-table .td:first-child {
+	width:220px;
+}
+
+
+/**** DARKER TABLE VARIANT
 .content-body .magic-block-parameters .block-parameters-table .th {
   background-color: #798F98;
   border:0;
@@ -205,21 +206,23 @@ nav#hub-sidebar ul a { color:#AAA; }
 }
 ******/
 
-.content-body .magic-block-parameters .block-parameters-table .td:first-child { 
-	width:220px;
-}
-/*** Github Gists Fixes (TEMP / TODO / REVIEW) ***/
-.content-body .magic-block-html table td { border:0; }
+/*** LIGHT CODE BLOCK VARIANT
+.content-body .magic-block-code ul.block-code-header { background-color:#F9FAFA; }
+.content-body .magic-block-code ul.block-code-header li a:hover { background-color:#E1EDF2; }
+.content-body .magic-block-code ul.block-code-header li a.active { color:#333; }
+.content-body .magic-block-code ul.block-code-header li a.active:hover { color:#81A8B8; }
+***/
+
 
 
 
 /************** TAGS **************/
-.tag-all { 
+.tag-all {
 	border-radius:5px;
 	padding:5px 13px 4px;
 	font-size:13px;
 	color:#FFF;
-	width:120px;
+	min-width:120px;
 	display:inline-block;
 	text-align:center;
   font-weight:600;
@@ -234,6 +237,13 @@ nav#hub-sidebar ul a { color:#AAA; }
 	background-color:hsla(263,36%,62%,1);
   border-color:hsla(263,15%,40%,1);
 }
+.tag-advanced {
+	background-color:hsla(197,2%,32%,1);
+  border-color:hsla(197,10%,2%,1);
+  color:hsla(197,2%,90%,1);
+}
+
+
 
 
 /************** NAV **************/
@@ -244,34 +254,119 @@ nav#hub-sidebar ul a { color:#AAA; }
 .theme-line header#hub-header #header-top {
   border:0;
 }
-#hub-search input {
-  background-color:hsla(197,10%,60%,1);
-  border:0;
-}
-#hub-search input:placeholder, #hub-search input::placeholder, #hub-search input::-webkit-input-placeholder, #hub-search input:-moz-placeholder, #hub-search input::-moz-placeholder,#hub-search input:-ms-input-placeholder {
-  color:#FFF;
-}
-#hub-search .fa.fa-search {
-  color:hsla(197,5%,100%,0.85);
-}
+
 #hub-subheader-parent #hub-subheader .hub-subheader-breadcrumbs .hub-breadcrumb-item {
   color:hsla(197,5%,100%,0.5);
 }
 #hub-subheader-parent #hub-subheader #header-bottom-nav #header-icon-nav .icons .subheaderLink .icon {
   color:hsla(197,5%,100%,0.85);
 }
+/* Top Nav Text Links */
 #hub-subheader-parent #hub-subheader #header-bottom-nav #header-icon-nav .icons .subheaderLink span {
+  color:#FFF;
+  font-weight:600;
+}
+#hub-subheader-parent #hub-subheader #header-bottom-nav #header-icon-nav .icons .subheaderLink:hover span,
+#hub-subheader-parent #hub-subheader #header-bottom-nav #header-icon-nav .icons .subheaderLink:hover .icon {
+  color:hsla(197,45%,85%,1);
+}
+
+/* Top Nav Tab highlight, matches style of code tabs */
+#hub-subheader #header-bottom-nav #header-icon-nav .icons .subheaderLink.active {
+  background-color: hsla(197,0%,100%,0.15);
+  border-bottom: 3px solid hsla(197,20%,45%,1);
+}
+#hub-subheader-parent #hub-subheader #header-bottom-nav #header-icon-nav .icons .subheaderLink {
+  padding: 8px 8px 2px;
+  margin-right:10px;
+}
+
+
+
+/* Search box */
+#hub-search input {
+  background-color:hsla(197,10%,60%,1);
+  border:0;
+  font-weight:600;
   color:#FFF;
 }
 
-/* Fix subpage button widths on right */
+/* Search box hover with icon padding fixes */
+#hub-search input,
+#hub-search .searchbox.full input { padding-left:34px; }
+#hub-search .searchbox.full input { font-size:16px; }
+#hub-search .fa.fa-search { left:8px; }
+#hub-search input:focus { background-color:hsla(197,10%,55%,1); }
+
+/* Search icon colors and styling */
+#hub-search .searchbox .fa.fa-search,
+#hub-search .searchbox:hover .fa.fa-search,
+#hub-search .searchbox.full .fa.fa-search {
+  color:hsla(197,5%,100%,0.85);
+  font-size:18px;
+}
+#hub-search input + .fa.fa-search,
+#hub-search input:focus + .fa.fa-search,
+#hub-search:hover .searchbox .fa.fa-search {
+  color:hsla(197,45%,85%,1);
+}
+
+/* placeholder text: pseudoclasses for lightening it */
+#hub-search input::-webkit-input-placeholder { color:hsla(197,5%,100%,0.75); }
+#hub-search input::-moz-placeholder { color:hsla(197,5%,100%,0.75); }
+#hub-search input::-ms-input-placeholder { color:hsla(197,5%,100%,0.75); }
+
+
+/* Search box when full sized (after input) */
+#hub-search .searchbox.full .fa.fa-search { color:#FFF; }
+#hub-search-results ul li.activeSearch a {
+  background-color:hsla(197,35%,92%,1);
+  color:hsla(197,45%,65%,1);
+}
+#hub-search-results ul li.activeSearch a strong.hub-result-title,
+#hub-search-results ul li.activeSearch a em,
+#hub-search-results ul li.activeSearch a .hub-result-type,
+#hub-search-results ul li.activeSearch a p {
+  color:hsla(197,45%,60%,1);
+}
+
+#hub-search-results ul li a:hover {
+  background-color:hsla(197,35%,97%,1);
+  color:hsla(197,30%,70%,1);
+}
+#hub-search-results ul li a {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#hub-search-results ul li a:hover strong.hub-result-title,
+#hub-search-results ul li a:hover em,
+#hub-search-results ul li a:hover .hub-result-type,
+#hub-search-results ul li a:hover p {
+  color:hsla(197,30%,70%,1);
+}
+
+/* Get rid of 'search results' text when searching */
+#hub-search-results .hub-container h3 { display:none; }
+#hub-search-results {
+  padding-top:0;
+  margin-top:0;
+  border-top:0;
+}
+
+
+
+
+/* Nav Left: make subpage backgrounds less wide to match rightmost width of main pages */
 nav#hub-sidebar ul .subpages li a {
   width:224px;
 }
 
-#hub-subheader #header-bottom-nav #header-icon-nav .icons .subheaderLink.active {
-    border-bottom: 3px solid hsla(197,10%,60%,1);
-}
-
-
+/* Not sure */
 #hub-landing-top .btn { display:none; }
+
+
+/*** Github Gists Fixes (TEMP / TODO / REVIEW) ***/
+.content-body .magic-block-html table td { border:0; }
+
