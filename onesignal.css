@@ -96,6 +96,17 @@ p { color:hsla(197,10%,45%,1); }
 nav#hub-sidebar ul a { color:#AAA; }
 
 
+
+/* Fix for readme's lack of code block targeting outside p */
+li code {
+  background: rgba(96,105,113,0.1);
+  padding: 3px 5px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  color: #555;
+}
+
+
 /************** LAYOUT ***************/
 /*** REST API ***/
 /** TODO: hid this element because its dumb **/
