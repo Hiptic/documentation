@@ -105,7 +105,6 @@ nav#hub-sidebar ul a { color:#AAA; }
 /************************ MARGINS & PADDING *************************/
 .content-body .magic-block-textarea h3 { margin:50px 20px 20px 0; }
 .content-body .magic-block-textarea h3 code { margin:50px 20px 30px 0; }
-.content-body .magic-block-textarea ol p { padding-left:10px; }
 .content-body .magic-block-textarea ul li,
 .content-body .magic-block-api-header ul li { margin-bottom: 0.3em; }
 .content-body .magic-block-textarea ol li,
@@ -114,6 +113,17 @@ nav#hub-sidebar ul a { color:#AAA; }
 .content-body .magic-block-api-header ul,
 .content-body .magic-block-textarea ol,
 .content-body .magic-block-api-header ol { margin-bottom:1.4em; }
+
+
+/** Readme.io list elements that aren't space by a space will not get a paragraph tag.
+Readme.io also doesn't work with [the pseudo class :before](https://jsfiddle.net/hx37fqf9/),
+so the only way to get styled numbers is to add an extra space to get paragraph tags in,
+and style them with CSS **/
+.content-body .magic-block-textarea ol p,
+.content-body .magic-block-api-header ol p {
+  margin-bottom: 0.3em;
+  padding-left:10px;
+}
 
 
 /************************ BORDERS *************************/
