@@ -1,130 +1,131 @@
-/************** TYPOGRAPHY **************/
+/******************************************************************************/
+/**************************** ONESIGNAL README CSS ****************************/
+/******************************************************************************/
 
-body {
-	font-family:'Avenir Next','Open Sans', sans-serif, system;
-}
-code {
-	font-family:Menlo, Monaco, Consolas, "Lucida Console", monospace;
-}
-b, strong {
-	font-weight:600;
-}
 
+
+/************************ TYPOGRAPHY ************************/
+
+/****** FONT FAMILIES ******/
+body { font-family:'Avenir Next','Open Sans', sans-serif, system; }
+code { font-family:Menlo, Monaco, Consolas, "Lucida Console", monospace; }
+
+
+/****** FONT WEIGHTS ******/
+/** 700 BOLD **/
 section#hub-content header h1,
-section#hub-content header h2 {
-	font-weight:700;
-	font-size:30px;
-}
+section#hub-content header h2 { font-weight:700; }
+
+/** 600 DEMI-BOLD **/
+b, strong { font-weight:600; }
+.content-body .magic-block-textarea ol,
+.content-body .magic-block-api-header ol { font-weight:600; }
+.content-body .magic-block-textarea h3 { font-weight:600; }
+.content-body .magic-block-textarea h4,
+.content-body .magic-block-api-header h4 { font-weight:600; }
+
+
+/** 500 MEDIUM **/
+a { font-weight:500; }
 .content-body .magic-block-textarea h1,
 .content-body .magic-block-api-header h1,
 .content-body .magic-block-textarea h2,
-.content-body .magic-block-api-header h2 {
-	font-weight:500;
-	font-size:26px;
-	color:#555;
-}
-.content-body .magic-block-textarea h3 {
-	font-weight:600;
-	font-style:normal;
-	font-family:Menlo, Monaco, Consolas, "Lucida Console", monospace;
-	margin:50px 20px 30px 0;
-	font-size:22px;
-	padding-top:30px;
-	border-top:1px solid #EEE;
-}
-.content-body .magic-block-textarea h4,
-.content-body .magic-block-api-header h4 {
-  font-style:normal;
-  font-weight:600;
-}
-.content-body .magic-block-textarea h5,
-.content-body .magic-block-api-header h5 {
+.content-body .magic-block-api-header h2 { font-weight:500; }
 
-}
-.content-body .magic-block-textarea h6,
-.content-body .magic-block-api-header h6 {
+/** 400 REGULAR **/
+/* Override: OL bolded numbers */
+.content-body .magic-block-textarea ol p { font-weight:400; }
 
-}
 
-.magic-block-textarea > p > a {
-	font-weight:600;
-}
+/****** FONT SIZES ******/
+/** 30px SUPER LARGE **/
+section#hub-content header h1,
+section#hub-content header h2 { font-size:30px; }
+
+/** 26px RATHER LARGE **/
+.content-body .magic-block-textarea h1,
+.content-body .magic-block-api-header h1,
+.content-body .magic-block-textarea h2,
+.content-body .magic-block-api-header h2 { font-size:26px; }
+
+/** 22px MEDIUM **/
+.content-body .magic-block-textarea h3,
+.content-body .magic-block-textarea h3 code { font-size:22px; }
+
+/** 16px NORMAL **/
 #hub-reference .hub-reference .hub-reference-section p,
 #hub-reference .hub-reference .hub-reference-section ul,
-#hub-reference .hub-reference .hub-reference-section table {
-	font-size:16px;
-}
-
+#hub-reference .hub-reference .hub-reference-section table { font-size:16px; }
 .content-body .magic-block-textarea ul li,
-.content-body .magic-block-api-header ul li {
-  margin-bottom: 0.3em;
-  font-size: 16px;
-}
+.content-body .magic-block-api-header ul li { font-size: 16px; }
+
+/** 15px SLIGHTLY SMALLER **/
 .content-body .magic-block-textarea ol li,
-.content-body .magic-block-api-header ol li {
-  margin-bottom: 0;
-  font-size: 15px;
-}
-.content-body .magic-block-textarea ul,
-.content-body .magic-block-api-header ul,
-.content-body .magic-block-textarea ol,
-.content-body .magic-block-api-header ol {
-  margin-bottom:1.4em;
-}
+.content-body .magic-block-api-header ol li { font-size: 15px; }
 
-.content-body .magic-block-textarea ol,
-.content-body .magic-block-api-header ol {
-  color:hsla(197,10%,60%,0.9);
-  font-weight:600;
-}
-.content-body .magic-block-textarea ol p {
-  padding-left:10px;
-  font-weight:400;
-}
+/** 12px MUCH SMALLER **/
 
 
-/*** colors ***/
+
+
+/****** FONT STYLES ******/
+.content-body .magic-block-textarea h3,
+.content-body .magic-block-textarea h4,
+.content-body .magic-block-api-header h4 { font-style:normal; }
+
+
+
+/****** COLORS ******/
 p { color:hsla(197,10%,45%,1); }
-.content-body .magic-block-textarea h3 {
-	color:hsla(197,10%,60%,1);
-}
-.magic-block-textarea > p > a {
-	color:hsla(197,40%,68%,1);
-}
-/* color:hsla(197,30%,72%,1); */
+/* Links: AKA #72b1ca, our default link color. Using http://colorizer.org/ */
+/* a { color:hsla(197,45%,62%,1); } */
+
+.content-body .magic-block-textarea ol,
+.content-body .magic-block-api-header ol { color:hsla(197,10%,60%,0.9); }
+
+.content-body .magic-block-textarea h1,
+.content-body .magic-block-api-header h1,
+.content-body .magic-block-textarea h2,
+.content-body .magic-block-api-header h2 { color:#555; }
+.content-body .magic-block-textarea h3 { color:hsla(197,10%,60%,1); }
 
 nav#hub-sidebar ul a { color:#AAA; }
 
+/* code block */
+.content-body .magic-block-code { background:none; }
+.content-body .magic-block-code div.block-code-code pre,
+.content-body .magic-block-textarea pre,
+.content-body .magic-block-api-header pre { background-color:hsla(197,15%,98%,1); }
 
 
-/* Fix for readme's lack of code block targeting outside p */
-li code {
-  background: rgba(96,105,113,0.1);
-  padding: 3px 5px;
-  border-radius: 3px;
-  font-size: 0.8em;
-  color: #555;
+
+
+
+
+/************************ MARGINS & PADDING *************************/
+.content-body .magic-block-textarea h3 { margin:50px 20px 20px 0; }
+.content-body .magic-block-textarea h3 code { margin:50px 20px 30px 0; }
+.content-body .magic-block-textarea ol p { padding-left:10px; }
+.content-body .magic-block-textarea ul li,
+.content-body .magic-block-api-header ul li { margin-bottom: 0.3em; }
+.content-body .magic-block-textarea ol li,
+.content-body .magic-block-api-header ol li { margin-bottom: 0; }
+.content-body .magic-block-textarea ul,
+.content-body .magic-block-api-header ul,
+.content-body .magic-block-textarea ol,
+.content-body .magic-block-api-header ol { margin-bottom:1.4em; }
+
+
+/************************ BORDERS *************************/
+
+/* Code-y style for API reference TODO
+.content-body .magic-block-textarea h3 code {
+  padding-top:30px;
+  border-top:1px solid #EEE;
 }
+*/
 
-
-/************** LAYOUT ***************/
-/*** REST API ***/
-/** TODO: hid this element because its dumb **/
-#hub-reference .hub-reference .hub-reference-section .hub-reference-right {
-	background:none;
-	border:0;
-	display:none;
-}
-.content-body .magic-block-callout {
-	margin:0 20px 3em 31px;
-}
-/* Huge max width but necessary for readability */
-#hub-reference .hub-reference .hub-reference-section {
-  max-width:1200px;
-}
-
-
-/************** CODE TABS **************/
+/************************ CODE TABS ************************/
 
 /*** DARK CODE BLOCK VARIANT ***/
 .content-body .magic-block-code ul.block-code-header {
@@ -154,13 +155,6 @@ li code {
 	color:#FFF;
 }
 
-/*** colors ***/
-.content-body .magic-block-code { background:none; }
-.content-body .magic-block-code div.block-code-code pre,
-.content-body .magic-block-textarea pre,
-.content-body .magic-block-api-header pre {
-	background-color:hsla(197,15%,98%,1);
-}
 .content-body .magic-block-code div.block-code-code pre code {
 	font-size:13.5px;
 	line-height:20px;
@@ -189,9 +183,7 @@ li code {
 .content-body .magic-block-parameters {
 	margin:0 20px 40px 31px;
 }
-.content-body .magic-block-parameters a {
-  font-weight:600;
-}
+
 .content-body .magic-block-parameters .block-parameters-table {
 	border-radius: 2px;
   border:0;
@@ -211,6 +203,7 @@ li code {
 	padding:5px 15px 10px;
 }
 
+/* TODO: better way to standardize widths of tables */
 .content-body .magic-block-parameters .block-parameters-table .td:first-child {
 	width:220px;
 }
@@ -238,8 +231,9 @@ li code {
 
 
 
+/************************ SPECIAL THINGS ************************/
 
-/************** TAGS **************/
+/****** TAGS ******/
 .tag-all {
 	border-radius:5px;
 	padding:5px 13px 4px;
@@ -267,8 +261,21 @@ li code {
 }
 
 
+/****** LABELS ******/
+.label-all {
+  display:inline;
+  font-size:12px;
+  text-transform:uppercase;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+.label-required    { color:hsla(359,75%,60%,1); }
+.label-optional    { color:hsla(197,20%,72%,1); }
+.label-recommended { color:hsla(197,15%,50%,1); }
+.label-notrec      { color:hsla(34,60%,55%,1);  }
 
-/************** APP HELP ***************/
+
+/****** DIRECT DASHBOARD LINKS ******/
 /* Encoding SVGs following this guide: https://codepen.io/tigt/post/optimizing-svgs-in-data-uris */
 /* Using this tool: https://jakearchibald.github.io/svgomg/ */
 a.dash-link {
@@ -289,7 +296,46 @@ a.dash-link:hover {
   background-color:hsla(196,35%,89%,1);
 }
 
-/************** NAV **************/
+
+/****** GITHUB GISTS ******/
+/* TODO: determine if we are going to use gists */
+.content-body .magic-block-html table td { border:0; }
+
+
+
+
+
+
+
+
+/************************ README OVERRIDES *************************/
+/* Readme lacks code block targeting outside p */
+li code {
+  background: rgba(96,105,113,0.1);
+  padding: 3px 5px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  color: #555;
+}
+
+/*** LAYOUT OF REST API SECTION ***/
+/** TODO: hid this element because its dumb **/
+#hub-reference .hub-reference .hub-reference-section .hub-reference-right {
+	background:none;
+	border:0;
+	display:none;
+}
+.content-body .magic-block-callout { margin:0 20px 3em 31px; }
+
+/* Huge max width but necessary for readability */
+#hub-reference .hub-reference .hub-reference-section { max-width:1200px; }
+
+
+/* LEFT NAVIGATION: make subpage backgrounds less wide to match rightmost width of main pages */
+nav#hub-sidebar ul .subpages li a { width:224px; }
+
+
+/****** NAV ******/
 #hub-subheader-parent #hub-subheader {
   border:0;
   background-color: hsla(197,10%,60%,1);
@@ -401,15 +447,9 @@ a.dash-link:hover {
 
 
 
-/* Nav Left: make subpage backgrounds less wide to match rightmost width of main pages */
-nav#hub-sidebar ul .subpages li a {
-  width:224px;
-}
+
 
 /* Not sure */
 #hub-landing-top .btn { display:none; }
 
-
-/*** Github Gists Fixes (TEMP / TODO / REVIEW) ***/
-.content-body .magic-block-html table td { border:0; }
 
