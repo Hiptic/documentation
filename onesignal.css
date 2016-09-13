@@ -52,6 +52,9 @@ section#hub-content header h2 { font-size:30px; }
 .content-body .magic-block-textarea h3,
 .content-body .magic-block-textarea h3 code { font-size:22px; }
 
+/** 18px HI-NORMAL **/
+.content-body .magic-block-textarea h4 code { font-size:18px; }
+
 /** 16px NORMAL **/
 #hub-reference .hub-reference .hub-reference-section p,
 #hub-reference .hub-reference .hub-reference-section ul,
@@ -87,7 +90,8 @@ p { color:hsla(197,10%,45%,1); }
 .content-body .magic-block-api-header h1,
 .content-body .magic-block-textarea h2,
 .content-body .magic-block-api-header h2 { color:#555; }
-.content-body .magic-block-textarea h3 { color:hsla(197,10%,60%,1); }
+.content-body .magic-block-textarea h3,
+.content-body .magic-block-textarea h4 { color:hsla(197,10%,60%,1); }
 
 nav#hub-sidebar ul a { color:#AAA; }
 
@@ -114,6 +118,8 @@ nav#hub-sidebar ul a { color:#AAA; }
 .content-body .magic-block-textarea ol,
 .content-body .magic-block-api-header ol { margin-bottom:1.4em; }
 
+/* h3s in tables, used in API reference */
+.td h3.header-scroll { margin:15px 0 0; }
 
 /** Readme.io list elements that aren't space by a space will not get a paragraph tag.
 Readme.io also doesn't work with [the pseudo class :before](https://jsfiddle.net/hx37fqf9/),
@@ -271,6 +277,7 @@ and style them with CSS **/
 }
 
 
+
 /****** LABELS ******/
 .label-all {
   display:inline;
@@ -283,6 +290,14 @@ and style them with CSS **/
 .label-optional    { color:hsla(197,20%,72%,1); }
 .label-recommended { color:hsla(197,15%,50%,1); }
 .label-notrec      { color:hsla(34,60%,55%,1);  }
+
+/* SDK Version numbers below methods in API reference */
+.label-sdk {
+  display:block;
+  margin:-15px 0 -3px;
+  color:hsla(197,20%,72%,1);
+}
+
 
 
 /****** DIRECT DASHBOARD LINKS ******/
