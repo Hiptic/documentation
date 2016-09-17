@@ -53,9 +53,10 @@ section#hub-content header h2 { font-size:30px; }
 .content-body .magic-block-textarea h3 code { font-size:22px; }
 
 /** 18px HI-NORMAL **/
-.content-body .magic-block-textarea h4 code { font-size:18px; }
+.content-body .magic-block-textarea h4 { font-size:18px; }
 
 /** 16px NORMAL **/
+.content-body .magic-block-textarea h4 code { font-size:16px; }
 #hub-reference .hub-reference .hub-reference-section p,
 #hub-reference .hub-reference .hub-reference-section ul,
 #hub-reference .hub-reference .hub-reference-section table { font-size:16px; }
@@ -207,11 +208,12 @@ and style them with CSS **/
   background-color:hsla(197,15%,98%,1);
 }
 .content-body .magic-block-parameters .block-parameters-table .th {
-  background-color:hsla(197,15%,98%,1);
+  background-color:hsla(197,15%,95%,1);
   border:0;
   color:hsla(197,10%,60%,0.9);
   font-weight:600;
 }
+/* best when table headers are same color as body:
 .content-body .magic-block-parameters .block-parameters-table .tr:first-child .th {
 	padding:10px 15px 15px;
 }
@@ -219,6 +221,7 @@ and style them with CSS **/
 .content-body .magic-block-parameters .block-parameters-table .tr:last-child .td {
 	padding:5px 15px 10px;
 }
+*/
 
 /* TODO: better way to standardize widths of tables */
 /* .magic-block-parameters .block-parameters-table .td:first-child {
