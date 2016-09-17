@@ -119,7 +119,7 @@ nav#hub-sidebar ul a { color:#AAA; }
 .content-body .magic-block-api-header ol { margin-bottom:1.4em; }
 
 /* h3s in tables, used in API reference */
-.td h3.header-scroll { margin:15px 0 0; }
+.magic-block-parameters .td h3.header-scroll { margin:15px 0 0; }
 
 /** Readme.io list elements that aren't space by a space will not get a paragraph tag.
 Readme.io also doesn't work with [the pseudo class :before](https://jsfiddle.net/hx37fqf9/),
@@ -194,7 +194,8 @@ and style them with CSS **/
 	padding:20px 30px;
 }
 
-/*** tables ***/
+/************************ TABLES *************************/
+
 
 .content-body .magic-block-parameters {
 	margin:0 20px 40px 31px;
@@ -220,10 +221,10 @@ and style them with CSS **/
 }
 
 /* TODO: better way to standardize widths of tables */
-.content-body .magic-block-parameters .block-parameters-table .td:first-child {
+/* .magic-block-parameters .block-parameters-table .td:first-child {
 	width:220px;
 }
-
+*/
 
 /**** DARKER TABLE VARIANT
 .content-body .magic-block-parameters .block-parameters-table .th {
@@ -290,14 +291,50 @@ and style them with CSS **/
 .label-optional    { color:hsla(197,20%,72%,1); }
 .label-recommended { color:hsla(197,15%,50%,1); }
 .label-notrec      { color:hsla(34,60%,55%,1);  }
+.label-advanced    { color:hsla(197,2%,32%,1);  }
 
-/* SDK Version numbers below methods in API reference */
-.label-sdk {
+
+/* Method/Function/etc Types below methods in API reference */
+.label-type {
   display:block;
-  margin:-15px 0 -3px;
-  color:hsla(197,20%,72%,1);
+  margin:-10px 0 -3px 31px;
+  color:hsla(197,20%,62%,1);
 }
 
+.label-ios { color:#444; }
+.label-android { color: #A4C639; }
+.label-amazon { color: #FF9900 }
+/* or their dark blue #232f3e */
+.label-chrome { color: #15A760; }
+.label-fireos,
+.label-firefox { color: #FF9500; }
+.label-safari { color: #0CC1E8; }
+.label-edge,
+.label-windows { color: #0078d7; }
+
+
+
+/****** PLATFORM INSTRUCTION BLOCK *******/
+.platform-instruction {
+  border-radius: 3px;
+  background-color: #fafafa;
+  padding: 20px;
+  margin-right: 100px;
+}
+.platform-instruction h5 {
+  font-size:13px;
+  text-transform:uppercase;
+  font-weight:600;
+  margin:0 0 10px;
+}
+/* duplicate their code block */
+.platform-instruction code {
+  background: rgba(96,105,113,0.1);
+  padding: 3px 5px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  color: #555;
+}
 
 
 /****** DIRECT DASHBOARD LINKS ******/
