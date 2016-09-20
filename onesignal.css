@@ -23,7 +23,7 @@ b, strong { font-weight:600; }
 .content-body .magic-block-textarea h3 { font-weight:600; }
 .content-body .magic-block-textarea h4,
 .content-body .magic-block-api-header h4 { font-weight:600; }
-
+.magic-block-parameters .td h3.header-scroll { font-weight:600; }
 
 /** 500 MEDIUM **/
 a { font-weight:500; }
@@ -40,11 +40,11 @@ a { font-weight:500; }
 /****** FONT SIZES ******/
 /** 30px SUPER LARGE **/
 section#hub-content header h1,
-section#hub-content header h2 { font-size:30px; }
+section#hub-content header h2,
+.content-body .magic-block-textarea h1,
+.content-body .magic-block-api-header h1 { font-size:30px; }
 
 /** 26px RATHER LARGE **/
-.content-body .magic-block-textarea h1,
-.content-body .magic-block-api-header h1,
 .content-body .magic-block-textarea h2,
 .content-body .magic-block-api-header h2 { font-size:26px; }
 
@@ -279,6 +279,11 @@ and style them with CSS **/
   border-color:hsla(197,10%,2%,1);
   color:hsla(197,2%,90%,1);
 }
+.tag-troubleshooting {
+  background-color:hsla(35,80%,75%,1);
+  border-color:hsla(35,44%,47%,1);
+  color:hsla(25,40%,45%,1);
+}
 
 
 
@@ -295,7 +300,9 @@ and style them with CSS **/
 .label-recommended { color:hsla(197,15%,50%,1); }
 .label-notrec      { color:hsla(34,60%,55%,1);  }
 .label-advanced    { color:hsla(197,2%,32%,1);  }
-
+.label-default,
+.label-yes         { color:hsla(140,20%,61%,1); }
+.label-no          { color:hsla(0,20%,61%,1); }
 
 /* Method/Function/etc Types below methods in API reference */
 .label-type {
@@ -374,6 +381,12 @@ a.dash-link:hover {
 
 
 /************************ README OVERRIDES *************************/
+
+.hub-container { max-width:1400px; }
+#content-container .content-body.grid-75 { width:80%; }
+#content-container #content-toc.grid-25 { width:20%; }
+section#hub-content #content-container section#content-toc { padding-left:12px; }
+
 /* Readme lacks code block targeting outside p */
 li code {
   background: rgba(96,105,113,0.1);
