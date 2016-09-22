@@ -268,25 +268,19 @@ and style them with CSS **/
 	display:inline-block;
 	text-align:center;
   font-weight:600;
-  border-bottom-width:2px;
-  border-bottom-style:solid;
 }
 .tag-developers {
 	background-color:hsla(197,10%,60%,1);
-  border-color:hsla(197,15%,40%,1);
 }
 .tag-marketers {
 	background-color:hsla(263,36%,62%,1);
-  border-color:hsla(263,15%,40%,1);
 }
 .tag-advanced {
 	background-color:hsla(197,2%,32%,1);
-  border-color:hsla(197,10%,2%,1);
   color:hsla(197,2%,90%,1);
 }
 .tag-troubleshooting {
   background-color:hsla(35,80%,75%,1);
-  border-color:hsla(35,44%,47%,1);
   color:hsla(25,40%,45%,1);
 }
 
