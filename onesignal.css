@@ -56,6 +56,7 @@ section#hub-content header h2,
 .content-body .magic-block-textarea h4 { font-size:18px; }
 
 /** 16px NORMAL **/
+.content-body .magic-block-textarea p { font-size:16px; }
 .content-body .magic-block-textarea h4 code { font-size:16px; }
 #hub-reference .hub-reference .hub-reference-section p,
 #hub-reference .hub-reference .hub-reference-section ul,
@@ -70,7 +71,11 @@ section#hub-content header h2,
 /** 12px MUCH SMALLER **/
 
 
-
+/****** LINE HEIGHTS ******/
+p { line-height:1.8; }
+.content-body .magic-block-textarea h2,
+.content-body .magic-block-textarea h3 { line-height:1.4; }
+.content-body .magic-block-textarea h4 { line-height:1.5; }
 
 /****** FONT STYLES ******/
 .content-body .magic-block-textarea h3,
@@ -299,6 +304,7 @@ and style them with CSS **/
 .label-optional    { color:hsla(197,20%,72%,1); }
 .label-recommended { color:hsla(197,15%,50%,1); }
 .label-notrec      { color:hsla(34,60%,55%,1);  }
+.label-developers  { color:hsla(197,15%,40%,1); }
 .label-advanced    { color:hsla(197,2%,32%,1);  }
 .label-default,
 .label-yes         { color:hsla(140,20%,61%,1); }
@@ -310,8 +316,11 @@ and style them with CSS **/
   margin:-10px 0 -3px 31px;
   color:hsla(197,20%,62%,1);
 }
-
-.label-ios { color:#444; }
+/* since iOS has a lowercase i and otherwise it looks like LOS */
+.label-ios {
+  color:#444;
+  text-transform:none!important;
+}
 .label-android { color: #A4C639; }
 .label-amazon { color: #FF9900 }
 /* or their dark blue #232f3e */
