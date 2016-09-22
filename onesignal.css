@@ -81,7 +81,7 @@ p { line-height:1.8; }
 .content-body .magic-block-textarea h3,
 .content-body .magic-block-textarea h4,
 .content-body .magic-block-api-header h4 { font-style:normal; }
-
+.magic-block-parameters .td h3.header-scroll { text-decoration: underline; }
 
 
 /****** COLORS ******/
@@ -97,7 +97,7 @@ p { color:hsla(197,10%,45%,1); }
 .content-body .magic-block-textarea h2,
 .content-body .magic-block-api-header h2 { color:#555; }
 .content-body .magic-block-textarea h3,
-.content-body .magic-block-textarea h4 { color:hsla(197,10%,60%,1); }
+.content-body .magic-block-textarea h4 { color:hsla(197,10%,50%,1); }
 
 nav#hub-sidebar ul a { color:#AAA; }
 
@@ -270,7 +270,7 @@ and style them with CSS **/
   font-weight:600;
 }
 .tag-developers {
-	background-color:hsla(197,10%,60%,1);
+	background-color:hsla(197,10%,70%,1);
 }
 .tag-marketers {
 	background-color:hsla(263,36%,62%,1);
@@ -412,11 +412,38 @@ li code {
 #hub-reference .hub-reference .hub-reference-section { max-width:1200px; }
 
 
-/* LEFT NAVIGATION: make subpage backgrounds less wide to match rightmost width of main pages */
+/***************** NAVIGATION *****************/
+
+/****** LEFT NAVIGATION ******/
+
+/* Make subpage backgrounds less wide to match rightmost width of main pages */
 nav#hub-sidebar ul .subpages li a { width:224px; }
 
+nav#hub-sidebar ul li.subnav-expanded .subpages {
+  background-color: hsla(197,10%,96%,1);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  margin-right:13px;
+}
+nav#hub-sidebar ul li.subnav-expanded > a {
+  background-color: hsla(197,10%,90%,1);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color:#777;
+}
+/* Default back to readme standard hover */
+nav#hub-sidebar ul li.subnav-expanded > a.active {
+  background-color: #8a9599;
+  color:#fff;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+nav#hub-sidebar ul a:hover {
+  background-color: hsla(197,10%,90%,1);
+  color: hsla(197,30%,50%,1);
+}
 
-/****** NAV ******/
+/****** TOP NAVIGATION ******/
 #hub-subheader-parent #hub-subheader {
   border:0;
   background-color: hsla(197,10%,60%,1);
