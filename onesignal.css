@@ -124,8 +124,10 @@ nav#hub-sidebar ul a { color:#AAA; }
 .content-body .magic-block-textarea ol,
 .content-body .magic-block-api-header ol { margin-bottom:1.4em; }
 
-/* h3s in tables, used in API reference */
-.magic-block-parameters .td h3.header-scroll { margin:15px 0 0; }
+/* h3s in tables, used in API reference; have to override readme's stupid !important */
+section#hub-content #content-container section.content-body .magic-block-parameters .td h3.header-scroll {
+  margin:10px 0 0 !important;
+}
 
 /** Readme.io list elements that aren't space by a space will not get a paragraph tag.
 Readme.io also doesn't work with [the pseudo class :before](https://jsfiddle.net/hx37fqf9/),
@@ -217,6 +219,9 @@ and style them with CSS **/
   border:0;
   color:hsla(197,10%,60%,0.9);
   font-weight:600;
+}
+.content-body .magic-block-parameters .block-parameters-table .tr:last-child .td {
+	padding-bottom:10px;
 }
 /* best when table headers are same color as body:
 .content-body .magic-block-parameters .block-parameters-table .tr:first-child .th {
