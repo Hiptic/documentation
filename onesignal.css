@@ -72,7 +72,11 @@ section#hub-content header h2,
 .content-body .magic-block-textarea ol li,
 .content-body .magic-block-api-header ol li { font-size: 15px; }
 
-/** 12px MUCH SMALLER **/
+/** 13px MUCH SMALLER **/
+p code,
+.platform-instruction code { font-size: 13px; }
+
+
 
 
 /****** LINE HEIGHTS ******/
@@ -206,6 +210,17 @@ and style them with CSS **/
 	padding:20px 30px;
 }
 
+
+/************************ QUOTES *************************/
+
+blockquote {
+  background-color: #f9f9f9;
+  border-left:3px solid hsla(0,45%,85%,1);
+  margin-left:32px;
+  padding:20px 0 10px;
+  font-style:italic;
+}
+
 /************************ TABLES *************************/
 
 
@@ -309,10 +324,16 @@ and style them with CSS **/
 .label-recommended { color:hsla(197,15%,50%,1); }
 .label-notrec      { color:hsla(34,60%,55%,1);  }
 .label-developers  { color:hsla(197,15%,40%,1); }
+.label-marketers   { color:hsla(263,36%,52%,1); }
 .label-advanced    { color:hsla(197,2%,32%,1);  }
 .label-default,
 .label-yes         { color:hsla(140,20%,61%,1); }
 .label-no          { color:hsla(0,20%,61%,1); }
+
+.label-benefit {
+  color:hsla(0, 50%, 55%, 1);
+  font-size:15px;
+}
 
 /* Method/Function/etc Types below methods in API reference */
 .label-type {
@@ -355,7 +376,6 @@ and style them with CSS **/
   background: rgba(96,105,113,0.1);
   padding: 3px 5px;
   border-radius: 3px;
-  font-size: 0.8em;
   color: #555;
 }
 
@@ -365,7 +385,7 @@ and style them with CSS **/
 /* Using this tool: https://jakearchibald.github.io/svgomg/ */
 a.dash-link {
   background-color: hsla(196,40%,94%,1);
-  padding:5px 6px 4px 23px;
+  padding:5px 6px 3px 23px;
   border-radius:5px;
   font-size:13px;
   font-weight:600;
@@ -381,6 +401,9 @@ a.dash-link:hover {
 }
 
 
+
+
+
 /****** GITHUB GISTS ******/
 /* TODO: determine if we are going to use gists */
 .content-body .magic-block-html table td { border:0; }
@@ -394,10 +417,30 @@ a.dash-link:hover {
 
 /************************ README OVERRIDES *************************/
 
-.hub-container { max-width:1400px; }
-#content-container .content-body.grid-75 { width:80%; }
-#content-container #content-toc.grid-25 { width:20%; }
-section#hub-content #content-container section#content-toc { padding-left:12px; }
+/* Fix media query small browser window / mobile layout, which has transparent top */
+#header-top {
+  background-color:#FFF;
+}
+
+/* margin 0 fixes the nav to the left rather than centering, which makes the
+   issue of the nav scrolling separately from the body much less annoying, since
+   there's no whitespace to the left of the nav */
+.hub-container {
+  max-width:1400px;
+  margin:0;
+}
+/* for regular widths, we bump out the column widths */
+@media all and (min-width:1024px) {
+  #content-container .content-body.grid-75 { width:80%; }
+  #content-container #content-toc.grid-25 { width:20%; }
+  section#hub-content #content-container section#content-toc { padding-left:12px; }
+}
+
+/* because readme drops it to bottom of page at widths b/t 768-1024 */
+@media all and (max-width:1023px) {
+  #content-toc { display:none; }
+}
+
 
 /* Readme lacks code block targeting outside p */
 li code {
