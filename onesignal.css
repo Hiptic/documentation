@@ -57,11 +57,11 @@ section#hub-content header h2,
 .content-body .magic-block-textarea h3 code { font-size:22px; }
 
 /** 18px HI-NORMAL **/
-.content-body .magic-block-textarea h4 { font-size:18px; }
+.content-body .magic-block-textarea h4,
+.content-body .magic-block-textarea h4 code { font-size:18px; }
 
 /** 16px NORMAL **/
 .content-body .magic-block-textarea p { font-size:16px; }
-.content-body .magic-block-textarea h4 code { font-size:16px; }
 #hub-reference .hub-reference .hub-reference-section p,
 #hub-reference .hub-reference .hub-reference-section ul,
 #hub-reference .hub-reference .hub-reference-section table { font-size:16px; }
