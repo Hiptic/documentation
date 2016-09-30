@@ -209,6 +209,10 @@ and style them with CSS **/
 .content-body .magic-block-api-header pre {
 	padding:20px 30px;
 }
+.content-body .magic-block-textarea pre,
+.content-body .magic-block-api-header pre {
+  margin:20px 20px 31px;
+}
 
 
 /************************ QUOTES *************************/
@@ -400,6 +404,164 @@ a.dash-link:hover {
   background-color:hsla(196,35%,89%,1);
 }
 
+/****** CARDS ******/
+.card-row {
+  width:45%;
+  min-width:300px;
+}
+.card {
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  transition: box-shadow .25s;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.card .card-image { position: relative; }
+
+.card .card-image img {
+  display: block;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%
+}
+.card .card-content {
+  padding: 20px;
+  border-radius: 0 0 2px 2px;
+}
+.card .card-content .card-title { line-height: 48px; }
+.card .card-title {
+  font-size: 24px;
+  font-weight: 300;
+}
+.card .card-title.activator { cursor: pointer; }
+
+.card .card-content p {
+  margin: 0;
+  color: inherit;
+}
+
+
+
+/** homepage card variant **/
+section.cards {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+section.cards a, section.cards a:hover,
+section.cards a:active {
+    color: initial
+}
+
+section.cards .platform-card {
+    display: inline-block;
+    width: 350px;
+    margin-right: 33px;
+    margin-bottom: 33px;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+section.cards .platform-card:last-of-type {
+    margin-right: 0
+}
+
+section.cards .platform-card:hover {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3)
+}
+
+section.cards .platform-card:active {
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.1);
+    -webkit-transform: scale(0.99, 0.99);
+    -ms-transform: scale(0.99, 0.99);
+    transform: scale(0.99, 0.99)
+}
+
+section.cards .platform-card .card-image {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-image: radial-gradient(circle at 50% 50%, #a1abbc, #334769);
+}
+section#hub-content #content-container section.content-body section.cards .platform-card .card-image img {
+    max-width:320px;
+    width:100%;
+    display:block;
+    margin:auto;
+    padding:10px;
+}
+
+section.cards .platform-card footer {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 57px;
+    margin: 0;
+    padding: 16px 12px 19px 17px;
+    background: white;
+}
+
+section.cards .platform-card footer .title {
+    font-weight: 700;
+    font-size: 18px
+}
+
+section.cards .platform-card footer .subtitle {
+    font-style: italic;
+    font-size: 12px;
+    margin-left: 0.5em;
+}
+
+section.cards .platform-card .getting-started {
+    border-radius: 18px;
+    background-image: linear-gradient(to bottom, #e54b4d, #f47b7d);
+    box-shadow: 0 1px 2px 0 rgba(117, 117, 117, 0.5);
+    border: 0;
+    color: white;
+    padding: 8px 12px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px
+}
+
+section.cards .platform-card .getting-started:active {
+    box-shadow: 0 0 2px 0 rgba(117, 117, 117, 0.6)
+}
+
+section.cards .platform-card .getting-started:focus {
+    outline: 0
+}
+
+section.note {
+    color: #999999;
+    font-size: 13px;
+    text-align: center;
+    padding: 0 20px
+}
+
+
 
 
 
@@ -430,11 +592,12 @@ a.dash-link:hover {
   margin:0;
 }
 /* for regular widths, we bump out the column widths */
-@media all and (min-width:1024px) {
+/* @media all and (min-width:1024px) {
   #content-container .content-body.grid-75 { width:80%; }
   #content-container #content-toc.grid-25 { width:20%; }
   section#hub-content #content-container section#content-toc { padding-left:12px; }
 }
+*/
 
 /* because readme drops it to bottom of page at widths b/t 768-1024 */
 @media all and (max-width:1023px) {
