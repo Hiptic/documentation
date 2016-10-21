@@ -323,6 +323,9 @@ blockquote {
   font-weight: 700;
   letter-spacing: 0.3px;
 }
+h4 .label-all {
+  font-size:16px;
+}
 .label-required    { color:hsla(359,75%,60%,1); }
 .label-optional    { color:hsla(197,20%,72%,1); }
 .label-recommended { color:hsla(197,15%,50%,1); }
@@ -795,5 +798,3 @@ nav#hub-sidebar ul a.active .fa-chevron-right {
 
 /* Not sure */
 #hub-landing-top .btn { display:none; }
-
-
