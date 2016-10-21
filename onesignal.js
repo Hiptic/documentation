@@ -1,2 +1,6 @@
-// Navigation: Change 'Announcements' to 'Changelog'
-$('#header-icon-nav .icons a:nth-child(4) span').html('Changelog');
+$(function() {
+	$('.contact-support').click(function(){
+	  Intercom('showNewMessage', 'My message');
+	  return false; 
+	});
+});
