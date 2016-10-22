@@ -582,6 +582,19 @@ section.note {
 
 /************************ README OVERRIDES *************************/
 
+/*
+  Fix ReadMe header dropdown (Documentation vs. REST API Reference) styling the text invisibly
+*/
+header#hub-header .dropdown-menu a:not(:hover) span {
+  color: #AAA !important;
+}
+header#hub-header .dropdown-menu a:not(:hover) i {
+  color: #AAA !important;
+}
+#hub-subheader-parent #hub-subheader .hub-subheader-breadcrumbs .dropdown.open a.dropdown-toggle span, #hub-subheader-parent #hub-subheader .hub-subheader-breadcrumbs .dropdown.open a.dropdown-toggle strong, #hub-subheader-parent #hub-subheader .hub-subheader-breadcrumbs .dropdown.open a.dropdown-toggle .fa-chevron-down {
+  color: rgb(51, 51, 51);
+}
+
 /* Fix media query small browser window / mobile layout, which has transparent top */
 #header-top {
   background-color:#FFF;
