@@ -3,6 +3,38 @@
 /******************************************************************************/
 
 /************************ CUSTOM ************************/
+
+.content-body .magic-block-callout h3 {
+  font-size: 17px;
+}
+
+.content-body .magic-block-callout p {
+  font-size: 17px;
+}
+
+.content-body .magic-block-callout pre {
+  font-size: 15px;
+}
+
+hr {
+  height: 3px;
+  background: #ddd;
+}
+
+.osdocbtn {
+  padding: 10px 20px;
+  display: inline;
+  background-color: #899db3;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.step {
+  color: #899db3;
+}
+
 #web-push-warning {
 	background: red;
   color: white;
