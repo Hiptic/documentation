@@ -729,7 +729,7 @@ nav#hub-sidebar ul .subpages li:last-child {
   margin-bottom:5px;
 }
 nav#hub-sidebar ul li.subnav-expanded .subpages {
-  background-color: hsla(197,10%,96%,1);
+  background-color: hsla(197, 20%, 93%, 1)
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   margin-right:13px;
