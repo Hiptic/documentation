@@ -12,9 +12,8 @@ nav#hub-sidebar h3 {
   color: #616969;
 }
 
-#hub-sidebar-content {
+nav#hub-sidebar {
   background-color: #fafafa;
-  height: 100%;
 }
 
 .content-body .magic-block-callout h3 {
@@ -30,7 +29,7 @@ nav#hub-sidebar h3 {
 }
 
 hr {
-  height: 3px;
+  height: 1px;
   background: #ddd;
 }
 
