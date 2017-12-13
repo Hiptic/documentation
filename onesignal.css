@@ -179,7 +179,7 @@ p { color:hsla(197,10%,45%,1); }
 .content-body .magic-block-textarea h3,
 .content-body .magic-block-textarea h4 { color:hsla(197,10%,50%,1); }
 
-nav#hub-sidebar ul a { color:#AAA; }
+nav#hub-sidebar ul a { color:#999; }
 
 /* code block */
 .content-body .magic-block-code { background:none; }
