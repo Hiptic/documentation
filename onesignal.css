@@ -4,6 +4,10 @@
 
 /************************ CUSTOM ************************/
 
+nav#hub-sidebar h3 {
+  color: #616969;
+}
+
 #hub-sidebar-content {
   background-color: #fafafa;
   height: 100%;
