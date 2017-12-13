@@ -4,6 +4,10 @@
 
 /************************ CUSTOM ************************/
 
+nav#hub-sidebar a.subpage {
+  color: #777;
+}
+
 nav#hub-sidebar h3 {
   color: #616969;
 }
