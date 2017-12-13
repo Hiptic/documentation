@@ -4,6 +4,11 @@
 
 /************************ CUSTOM ************************/
 
+#hub-sidebar-content {
+  background-color: #fafafa;
+  height: 100%;
+}
+
 .content-body .magic-block-callout h3 {
   font-size: 17px;
 }
