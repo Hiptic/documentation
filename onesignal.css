@@ -3,6 +3,89 @@
 /******************************************************************************/
 
 /************************ CUSTOM ************************/
+/********************** BADGES *******************/
+.stamp {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 5px 9px 3px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 12px;
+  border: 1px solid;
+}
+.stamp-sending {
+  background-color: #8da2b5;
+  color: #fff;
+  border-color: #8da2b5
+}
+
+.stamp-delivered,
+.stamp-success,
+.stamp-yes,
+.stamp-clicked {
+  background-color: #e3f1e6;
+  color: #279745;
+  border-color: #e3f1e6;
+}
+
+.stamp-queued,
+.stamp-remaining,
+.stamp-pending {
+  background-color: #e2f0fd;
+  border-color: #e2f0fd;
+  color: #1f8ceb
+}
+
+.stamp-invalid,
+.stamp-no,
+.stamp-unreachable {
+  background-color: #ffefe9;
+  border-color: #ed9a7b;
+  color: #d46144
+}
+
+.stamp-scheduled {
+  background-color: #f0f4f7;
+  border-color: #a3b7c2;
+  color: #8da2b5;
+}
+
+.stamp-warning,
+.stamp-failed {
+  background-color: #fff5e7;
+  border-color: #fab46d;
+  color: #d86f04
+}
+
+.stamp-canceled {
+  background-color: #fff5e7;
+  border-color: #fab46d;
+  color: #d86f04
+}
+
+.stamp-review {
+  background-color: #ffebb4;
+  border-color: #decc9d;
+  color: #776a45
+}
+
+// Unused currently
+
+.stamp-user {
+  background-color: #1f8ceb;
+  color: #fff;
+  border-color: #1f8ceb
+}
+
+.stamp-company {
+  background-color: #59b0fc;
+  color: #fff;
+  border-color: #59b0fc
+}
+
+
 
 .content-body .magic-block-callout.type-info {
   background-color: hsla(200, 30%, 96%, 1);
@@ -489,13 +572,13 @@ h4 .label-all {
 /* Using this tool: https://jakearchibald.github.io/svgomg/ */
 a.dash-link {
   background-color: hsla(196,40%,94%,1);
-  padding:5px 6px 3px 23px;
+  padding:6px 6px 3px 23px;
   border-radius:5px;
   font-size:13px;
   font-weight:600;
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='19' viewBox='0 0 20 19' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 16v-.7c2-.7 3.7-2.8 3.7-5.3 0-3-2.6-5.7-5.7-5.7C7 4.3 4.3 7 4.3 10c0 2.7 2 5 4.3 5.5v.6c-2.7-.6-4.8-3-4.8-6 0-3.4 2.8-6.2 6.2-6.2 3.4 0 6.2 2.8 6.2 6.2 0 2.8-1.8 5-4.3 6m1-6c0-1.6-1.4-3-3-3s-3 1.4-3 3c0 1.2.7 2 1.6 2.6v.6c-1.2-.5-2-1.7-2-3.2C6.5 8 8 6.5 10 6.5c2 0 3.5 1.6 3.5 3.5 0 1.2-.6 2.3-1.6 3v-.7c.5-.6 1-1.4 1-2.3M10 0C4.5 0 0 4.5 0 10c0 3.5 1.8 6.6 4.6 8.4L5 18h.4l.5-.4h.4c0-.2.2-.2.3-.3.2 0 .4 0 .6-.2h1.3c.2-.2.4-.2.6-.2V10.7h-.6v-1H11.4V17c1.4 0 2.8.6 4 1.4 2.8-1.8 4.6-5 4.6-8.4 0-5.5-4.5-10-10-10' fill='%23E54B4D' fill-rule='evenodd'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: 3px 3px;
+  background-position: 3px 5px;
   background-size:16px;
   margin-bottom:2px;
   cursor:pointer;
@@ -505,7 +588,7 @@ a.dash-link:hover {
   background-color:hsla(196,35%,89%,1);
 }
 
-nav#hub-sidebar ul a.sidebar-link {
+nav#hub-sidebar ul a.os-sidebar-link {
   padding:8px 9px 6px 32px;
   border-radius:5px;
   font-size:13px;
@@ -520,22 +603,22 @@ a.dash-link.dash-any {
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='19' viewBox='0 0 20 19' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 16v-.7c2-.7 3.7-2.8 3.7-5.3 0-3-2.6-5.7-5.7-5.7C7 4.3 4.3 7 4.3 10c0 2.7 2 5 4.3 5.5v.6c-2.7-.6-4.8-3-4.8-6 0-3.4 2.8-6.2 6.2-6.2 3.4 0 6.2 2.8 6.2 6.2 0 2.8-1.8 5-4.3 6m1-6c0-1.6-1.4-3-3-3s-3 1.4-3 3c0 1.2.7 2 1.6 2.6v.6c-1.2-.5-2-1.7-2-3.2C6.5 8 8 6.5 10 6.5c2 0 3.5 1.6 3.5 3.5 0 1.2-.6 2.3-1.6 3v-.7c.5-.6 1-1.4 1-2.3M10 0C4.5 0 0 4.5 0 10c0 3.5 1.8 6.6 4.6 8.4L5 18h.4l.5-.4h.4c0-.2.2-.2.3-.3.2 0 .4 0 .6-.2h1.3c.2-.2.4-.2.6-.2V10.7h-.6v-1H11.4V17c1.4 0 2.8.6 4 1.4 2.8-1.8 4.6-5 4.6-8.4 0-5.5-4.5-10-10-10' fill='%23E54B4D' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 a.dash-link.dash-settings,
-a.sidebar-link.dash-settings {
+a.os-sidebar-link.dash-settings {
   color: #8a9599;
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0 0 4.477 0 10s4.477 10 10 10z' fill='%238A9599'/%3E%3Cpath d='M10.522 5.5h1.315l-2.631 9H7.89l2.632-9zM5.625 10l1.524 2.631a.743.743 0 0 1-.275 1.019.75.75 0 0 1-1.023-.272l-1.66-2.865a.748.748 0 0 1-.19-.485.743.743 0 0 1 .193-.544l1.658-2.86a.748.748 0 0 1 1.298.746L5.625 10zm8.75 0L12.85 7.37a.748.748 0 1 1 1.298-.747l1.658 2.86c.136.15.204.347.193.545a.748.748 0 0 1-.19.485l-1.66 2.865a.75.75 0 0 1-1.023.272.743.743 0 0 1-.275-1.019l1.524-2.63z' fill='%23FFF'/%3E%3C/g%3E%3C/svg%3E");
 }
 a.dash-link.dash-messages,
-a.sidebar-link.dash-messages {
+a.os-sidebar-link.dash-messages {
   color: #899db3;
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpath d='M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0 0 4.477 0 10s4.477 10 10 10z' id='a'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cuse fill='%23899DB3' xlink:href='%23a'/%3E%3Cpath d='M7 15.25l-1-1.5h2l-1 1.5zM4 6.747a1 1 0 0 1 1.002-.997h9.996A1 1 0 0 1 16 6.747v6.006a1 1 0 0 1-1.002.997H5.002A1 1 0 0 1 4 12.753V6.747zm3 4.003a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z' fill='%23FFF'/%3E%3C/g%3E%3C/svg%3E");
 }
 a.dash-link.dash-users,
-a.sidebar-link.dash-users {
+a.os-sidebar-link.dash-users {
   color: #9B89B3;
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpath d='M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0 0 4.477 0 10s4.477 10 10 10z' id='a'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cuse fill='%23957ABF' xlink:href='%23a'/%3E%3Cpath d='M8.465 6.697c1.149 0 1.93.837 1.93 1.868 0 1.032-.781 1.868-1.93 1.868-1.15 0-1.93-.836-1.93-1.868 0-1.031.78-1.868 1.93-1.868zM5.602 15.27c-.304-.316-.591-.716-.591-1.36.074-1.674 1.577-3.032 3.438-3.047h.031c1.861.015 3.365 1.373 3.34 3.047-.002.492-.188 1.044-.493 1.36-.11.295-5.433.318-5.725 0zM12.295 4.5c1.149 0 1.93.836 1.93 1.868 0 1.031-.781 1.868-1.93 1.868s-1.93-.837-1.93-1.868c0-1.032.781-1.868 1.93-1.868zm-.016 4.164l.031.001c1.861.015 3.177 1.373 3.177 3.048 0 .492-.262 1.044-.524 1.36 0 .149-1.256.228-2.655.23-.245-1.26-1.234-2.295-2.541-2.72a2.278 2.278 0 0 0 1.12-1.637 3.735 3.735 0 0 1 1.392-.282z' fill='%23FFF'/%3E%3C/g%3E%3C/svg%3E");
 }
 a.dash-link.dash-analytics,
-a.sidebar-link.dash-analytics {
+a.os-sidebar-link.dash-analytics {
   color: #6BB38A;
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpath d='M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0 0 4.477 0 10s4.477 10 10 10z' id='a'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cuse fill='%236BB38A' xlink:href='%23a'/%3E%3Cpath d='M4.5 11a1 1 0 0 1 1.002-1h.495A.999.999 0 0 1 7 11v3a1 1 0 0 1-1.003 1h-.495A.999.999 0 0 1 4.5 14v-3zm4.25-1.997C8.75 8.449 9.196 8 9.752 8h.495a.996.996 0 0 1 1.003 1.003v4.994c0 .554-.447 1.003-1.003 1.003h-.495a.996.996 0 0 1-1.002-1.003V9.003zM13 5.995c0-.55.446-.995 1.002-.995h.495c.554 0 1.003.456 1.003.995v8.01c0 .55-.447.995-1.003.995h-.495A1.005 1.005 0 0 1 13 14.005v-8.01z' fill='%23FFF'/%3E%3C/g%3E%3C/svg%3E");
 }
